@@ -1,0 +1,28 @@
+{
+  "name": "suits_his_style_theme",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "author": "Adam Waselnuk",
+  "license": "",
+  "scripts": {
+    "autoprefixer": "autoprefixer library/css/*.css",
+    "sass": "sass library/scss/style.scss library/css/style.css",
+    "build:styles": "npm run sass && npm run autoprefixer",
+    "build:scripts": "",
+    "build": "npm run build:styles",
+    "watch": "watch 'npm run build' library/scss",
+    "serve": "",
+    "test": "",
+    "develop": "npm run build && parallelshell 'npm run watch'"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "browser-sync": "latest",
+    "parallelshell": "latest",
+    "watch": "latest"
+  }
+}
