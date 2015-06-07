@@ -931,28 +931,23 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn, .comment-reply-link, #submit,
+.btn {
   display: inline-block;
-  position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.5em 0.75em;
   text-decoration: none;
   color: #fff;
-  font-size: 0.9em;
-  font-size: 34px;
-  line-height: 34px;
   font-weight: normal;
-  padding: 0 24px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus,
+  .btn:hover,
+  .btn:focus {
     color: #fff;
-    text-decoration: none;
-    outline: none; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active {
-    top: 1px; }
+    text-decoration: none; }
 
 /*
 An example button.
@@ -965,6 +960,11 @@ and it will create a button dependant on those variables.
     background-color: #2a3b4b; }
   .blue-btn:active, .comment-reply-link:active, #submit:active {
     background-color: #283848; }
+
+.btn-cta {
+  padding: 0.75em 1em;
+  background-color: #EBB129;
+  font-size: 1.1rem; }
 
 .btn-as-link {
   display: inline-block;
@@ -1977,6 +1977,13 @@ query for retina AND a certain size if you want. Go Nuts.
   the original dimensions and you are good to go. 
   
   */ }
+/*============================================================================
+  PAGES
+==============================================================================*/
+.ctr-home-banner {
+  text-align: center;
+  font-size: 1.1rem; }
+
 /*********************
 PRINT STYLESHEET
 Feel free to customize this. Remember to add things that won't make
