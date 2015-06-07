@@ -71,8 +71,8 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
-	margin: 0 auto;
+	// width: 96%;
+	// margin: 0 auto;
 }
 
 /*********************
@@ -146,12 +146,14 @@ and more scalable.
 	margin: 0;
 
 	li {
+		border-top: 1px solid $blue-dark;
 
 		a {
 			display: block;
 			color: $white;
 			text-decoration: none;
 			padding: $base-font-size;
+			opacity: 0.6;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -160,7 +162,10 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+				@media (min-width: $mobile) {
+					opacity: 1;
+					text-decoration: underline;
+				}
 			}
 		}
 

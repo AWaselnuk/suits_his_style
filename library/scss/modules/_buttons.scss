@@ -73,3 +73,17 @@ and it will create a button dependant on those variables.
   } // end active
 
 } // end blue button
+
+.btn-as-link {
+  display: inline-block;
+  background: none;
+  border: none;
+}
+
+.btn-toggle-nav {
+  display: block;
+  padding: $base-font-size 0;
+  width: 100%;
+  background: $blue-dark;
+  color: white;
+}

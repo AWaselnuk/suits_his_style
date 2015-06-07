@@ -444,6 +444,7 @@ Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
+/*================ Breakpoints ================*/
 /******************************************************************
 Site Name:
 Author:
@@ -965,6 +966,18 @@ and it will create a button dependant on those variables.
   .blue-btn:active, .comment-reply-link:active, #submit:active {
     background-color: #283848; }
 
+.btn-as-link {
+  display: inline-block;
+  background: none;
+  border: none; }
+
+.btn-toggle-nav {
+  display: block;
+  padding: 1rem 0;
+  width: 100%;
+  background: #1f2b37;
+  color: white; }
+
 /******************************************************************
 Site Name:
 Author:
@@ -1323,10 +1336,6 @@ style a page via class
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-.wrap {
-  width: 96%;
-  margin: 0 auto; }
-
 /*********************
 LINK STYLES
 *********************/
@@ -1381,6 +1390,7 @@ and more scalable.
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
+    border-top: 1px solid #1f2b37;
     /*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the
@@ -1393,12 +1403,17 @@ and more scalable.
       color: #fff;
       text-decoration: none;
       padding: 1rem;
+      opacity: 0.6;
       /*
       remember this is for mobile ONLY, so there's no need
       to even declare hover styles here, you can do it in
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
+      @media (min-width: 481px) {
+        .nav li a:hover, .nav li a:focus {
+          opacity: 1;
+          text-decoration: underline; } }
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
@@ -1777,27 +1792,6 @@ tweeners.
   them in here, they won't work.
   */
   /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */ }
-    .menu ul {
-      /* end .menu ul li */
-      /* highlight current page */
-      /* end current highlighters */ }
-      .menu ul li {
-        /*
-        plan your menus and drop-downs wisely.
-        */ }
-        .menu ul li a {
-          /*
-          you can use hover styles here even though this size
-          has the possibility of being a mobile device.
-          */ }
-
-  /* end .menu */
-  /*********************
   POSTS & CONTENT STYLES
   *********************/
   /* entry content */
@@ -1855,71 +1849,6 @@ you can add resource intensive styles.
   .wrap {
     width: 760px; }
 
-  /*********************
-  HEADER STYLES
-  *********************/
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  .nav {
-    border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-    .nav ul {
-      background: #323944;
-      margin-top: 0; }
-    .nav li {
-      float: left;
-      position: relative;
-      /*
-      plan your menus and drop-downs wisely.
-      */
-      /* showing sub-menus */ }
-      .nav li a {
-        border-bottom: 0;
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
-        .nav li a:hover, .nav li a:focus {
-          color: #fff;
-          text-decoration: underline; }
-      .nav li ul.sub-menu,
-      .nav li ul.children {
-        margin-top: 0;
-        border: 1px solid #ccc;
-        border-top: 0;
-        position: absolute;
-        visibility: hidden;
-        z-index: 8999;
-        /* highlight sub-menu current page */ }
-        .nav li ul.sub-menu li,
-        .nav li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
-          .nav li ul.sub-menu li a,
-          .nav li ul.children li a {
-            padding-left: 10px;
-            border-right: 0;
-            display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
-          .nav li ul.sub-menu li:last-child a,
-          .nav li ul.children li:last-child a {
-            border-bottom: 0; }
-          .nav li ul.sub-menu li ul,
-          .nav li ul.children li ul {
-            top: 0;
-            left: 100%; }
-      .nav li:hover > ul {
-        top: auto;
-        visibility: visible; }
-
-  /* end .nav */
   /*********************
   SIDEBARS & ASIDES
   *********************/

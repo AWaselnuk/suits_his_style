@@ -77,6 +77,8 @@
 
 					</nav>
 
+          <button class="btn-as-link btn-toggle-nav">Hide Menu</button>
+
 				</div>
 
 			</header>
