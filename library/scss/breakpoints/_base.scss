@@ -115,16 +115,10 @@ HEADER STYLES
 	background-color: $black;
 }
 
-	#logo {
-		margin: 0.75em 0;
-
-		a {
-			color: $white;
-		}
-	}
-
 .logo {
-
+	font-size: $h3-font-size;
+	color: white !important;
+	text-decoration: none;
 }
 
 /*********************

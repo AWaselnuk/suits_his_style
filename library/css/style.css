@@ -1354,10 +1354,10 @@ HEADER STYLES
 .header {
   background-color: #323944; }
 
-#logo {
-  margin: 0.75em 0; }
-  #logo a {
-    color: #fff; }
+.logo {
+  font-size: 1.5rem;
+  color: white !important;
+  text-decoration: none; }
 
 /*********************
 NAVIGATION STYLES
