@@ -65,6 +65,7 @@ $base-line-height: 1.5rem;
 $measure: 760px;
 
 $lead-font-size: 1.25rem;
+$lead-line-height: 1.75rem;
 
 $h1-font-size: 3.375rem;
 $h1-line: 1.5rem;
@@ -183,3 +184,19 @@ p {
           font-feature-settings: "liga", "dlig";
 }
 
+.text-lead {
+  @media (min-width: $tablet) {
+    font-size: $lead-font-size;
+    line-height: $lead-line-height;
+  }
+}
+
+blockquote {
+  font-family: $serif;
+  font-style: italic;
+  margin: 0;
+
+  footer {
+    margin-top: $vertical-space;
+  }
+}

@@ -20,9 +20,8 @@ body {
 	font-size: $base-font-size;
 	line-height: $base-line-height;
 	color: $text-color;
-	background-color: $gray;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 img {

@@ -31,7 +31,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   text-decoration: none;
   color: $white;
   font-weight: normal;
-  border-radius: $radius;
   border: 0;
   cursor: pointer;
   @include transition(background-color 0.14s ease-in-out);
@@ -63,10 +62,21 @@ and it will create a button dependant on those variables.
 
 } // end blue button
 
+.btn-cta,
+.btn-primary {
+  background-color: $yellow;
+}
+
 .btn-cta {
   padding: 0.75em 1em;
-  background-color: $yellow;
   font-size: $lead-font-size;
+}
+
+.btn-primary {
+  @media (max-width: $mobile) {
+    width: 100%;
+    display: block;
+  }
 }
 
 .btn-as-link {

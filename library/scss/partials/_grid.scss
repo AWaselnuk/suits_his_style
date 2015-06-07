@@ -4,6 +4,10 @@
   padding-bottom: $vertical-space;
 }
 
+.row-dark {
+  background-color: $gray;
+}
+
 .col {
   padding-left: $gutter;
   padding-right: $gutter;
