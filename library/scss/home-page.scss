@@ -1,0 +1,15 @@
+.home-banner {
+  padding: $vertical-space-large $gutter;
+  text-align: center;
+  font-size: $lead-font-size;
+  line-height: $lead-line-height;
+  background-image: url(../images/ottawa.jpg);
+
+  .home-banner__text {
+    color: white;
+  }
+
+  .home-banner__cta {
+    margin-top: $vertical-space;
+  }
+}
