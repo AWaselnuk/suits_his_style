@@ -8,9 +8,9 @@
 
 <?php get_header(); ?>
 
-<div class="ctr-home-banner">
-  <p>Suits his Style is a not-for-profit corporation that helps men in need achieve their career goals.</p>
-  <button class="btn btn-cta">I want to learn more</button>
+<div class="home-banner background-image">
+  <p class="home-banner__text">Suits his Style is a not-for-profit corporation that helps men in need achieve their career goals.</p>
+  <button class="btn btn-cta home-banner__cta">I want to learn more</button>
 </div>
 
 

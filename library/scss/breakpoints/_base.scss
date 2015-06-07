@@ -222,7 +222,6 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
 }
 
 		.hentry {
@@ -857,3 +856,14 @@ FOOTER STYLES
 
 
 	.copyright {}
+
+
+/*============================================================================
+  UTILITIES
+==============================================================================*/
+
+.background-image {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}

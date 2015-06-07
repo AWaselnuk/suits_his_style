@@ -445,6 +445,7 @@ use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
 /*================ Breakpoints ================*/
+/*================ Measurments ================*/
 /******************************************************************
 Site Name:
 Author:
@@ -964,7 +965,7 @@ and it will create a button dependant on those variables.
 .btn-cta {
   padding: 0.75em 1em;
   background-color: #EBB129;
-  font-size: 1.1rem; }
+  font-size: 1.25rem; }
 
 .btn-as-link {
   display: inline-block;
@@ -1422,9 +1423,6 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-#content {
-  margin-top: 1.5em; }
-
 .hentry {
   background-color: #fff;
   border-radius: 3px;
@@ -1762,6 +1760,14 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+/*============================================================================
+  UTILITIES
+==============================================================================*/
+.background-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -1980,9 +1986,15 @@ query for retina AND a certain size if you want. Go Nuts.
 /*============================================================================
   PAGES
 ==============================================================================*/
-.ctr-home-banner {
+.home-banner {
+  padding: 3rem 1rem;
   text-align: center;
-  font-size: 1.1rem; }
+  font-size: 1.25rem;
+  background-image: url(../images/ottawa.jpg); }
+  .home-banner .home-banner__text {
+    color: white; }
+  .home-banner .home-banner__cta {
+    margin-top: 1rem; }
 
 /*********************
 PRINT STYLESHEET
