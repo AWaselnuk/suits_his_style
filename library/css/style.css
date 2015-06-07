@@ -1354,10 +1354,15 @@ HEADER STYLES
 .header {
   background-color: #323944; }
 
+.ctr-logo {
+  padding: 1rem; }
+
 .logo {
   font-size: 1.5rem;
   color: white !important;
   text-decoration: none; }
+  .logo .logo__description {
+    font-size: 1rem; }
 
 /*********************
 NAVIGATION STYLES
@@ -1387,7 +1392,7 @@ and more scalable.
       display: block;
       color: #fff;
       text-decoration: none;
-      padding: 0.75em;
+      padding: 1rem;
       /*
       remember this is for mobile ONLY, so there's no need
       to even declare hover styles here, you can do it in

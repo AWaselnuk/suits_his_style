@@ -52,7 +52,7 @@
 					<div id="logo" class="ctr-logo" itemscope itemtype="http://schema.org/Organization">
             <a class="logo" href="<?php echo home_url(); ?>" rel="nofollow">
               <?php bloginfo('name'); ?><br>
-              <span class="logo-description"><?php bloginfo('description'); ?></span>
+              <span class="logo__description"><?php bloginfo('description'); ?></span>
             </a>
           </div>
 

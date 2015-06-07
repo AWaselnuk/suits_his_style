@@ -115,10 +115,18 @@ HEADER STYLES
 	background-color: $black;
 }
 
+.ctr-logo {
+	padding: $base-font-size;
+}
+
 .logo {
 	font-size: $h3-font-size;
 	color: white !important;
 	text-decoration: none;
+
+	.logo__description {
+		font-size: $base-font-size;
+	}
 }
 
 /*********************
@@ -143,7 +151,7 @@ and more scalable.
 			display: block;
 			color: $white;
 			text-decoration: none;
-			padding: 0.75em;
+			padding: $base-font-size;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
