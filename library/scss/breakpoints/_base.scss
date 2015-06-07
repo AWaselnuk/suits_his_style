@@ -25,6 +25,10 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+img {
+	max-width: 100%;
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -856,7 +860,6 @@ FOOTER STYLES
 
 
 	.copyright {}
-
 
 /*============================================================================
   UTILITIES

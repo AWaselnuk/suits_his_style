@@ -406,12 +406,12 @@ table {
   white-space: nowrap;
   overflow: hidden; }
 
-.clearfix, .cf, .comment-respond {
+.clearfix, .cf, .row, .comment-respond {
   zoom: 1; }
-  .clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
+  .clearfix:before, .clearfix:after, .cf:before, .row:before, .comment-respond:before, .cf:after, .row:after, .comment-respond:after {
     content: "";
     display: table; }
-  .clearfix:after, .cf:after, .comment-respond:after {
+  .clearfix:after, .cf:after, .row:after, .comment-respond:after {
     clear: both; }
 
 /*
@@ -513,10 +513,16 @@ h1, .h1 {
   margin-bottom: 1.5rem; }
 
 h2, .h2 {
-  font-size: 2.25rem;
-  line-height: 3rem;
-  margin-top: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    h2, .h2 {
+      font-size: 2.25rem;
+      line-height: 3rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem; } }
 
 h3, .h3 {
   font-size: 1.5rem;
@@ -644,236 +650,14 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
-/******************************************************************
-Site Name:
-Author:
+.row {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
-Stylesheet: Grid Stylesheet
+.col {
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
-I've seperated the grid so you can swap it out easily. It's
-called at the top the style.scss stylesheet.
-
-There are a ton of grid solutions out there. You should definitely
-experiment with your own. Here are some recommendations:
-
-http://gridsetapp.com - Love this site. Responsive Grids made easy.
-http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-http://gridpak.com/ - Create your own responsive grid.
-https://github.com/dope/lemonade - Neat lightweight grid.
-
-
-The grid below is a custom built thingy I modeled a bit after
-Gridset. It's VERY basic and probably shouldn't be used on
-your client projects. The idea is you learn how to roll your
-own grids. It's better in the long run and allows you full control
-over your project's layout.
-
-******************************************************************/
-.last-col {
-  float: right;
-  padding-right: 0 !important; }
-
-/*
-Mobile Grid Styles
-These are the widths for the mobile grid.
-There are four types, but you can add or customize
-them however you see fit.
-*/
-@media (max-width: 767px) {
-  .m-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0; }
-
-  .m-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%; }
-
-  .m-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%; }
-
-  .m-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%; }
-
-  .m-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%; }
-
-  .m-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%; } }
-/* Portrait tablet to landscape */
-@media (min-width: 768px) and (max-width: 1029px) {
-  .t-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0; }
-
-  .t-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%; }
-
-  .t-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%; }
-
-  .t-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%; }
-
-  .t-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%; }
-
-  .t-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%; }
-
-  .t-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%; }
-
-  .t-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%; }
-
-  .t-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%; }
-
-  .t-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%; } }
-/* Landscape to small desktop */
-@media (min-width: 1030px) {
-  .d-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0; }
-
-  .d-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%; }
-
-  .d-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%; }
-
-  .d-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%; }
-
-  .d-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%; }
-
-  .d-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%; }
-
-  .d-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%; }
-
-  .d-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%; }
-
-  .d-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%; }
-
-  .d-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%; }
-
-  .d-1of6 {
-    float: left;
-    padding-right: 0.75em;
-    width: 16.6666666667%; }
-
-  .d-1of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 14.2857142857%; }
-
-  .d-2of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 28.5714286%; }
-
-  .d-3of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 42.8571429%; }
-
-  .d-4of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 57.1428572%; }
-
-  .d-5of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 71.4285715%; }
-
-  .d-6of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 85.7142857%; }
-
-  .d-1of8 {
-    float: left;
-    padding-right: 0.75em;
-    width: 12.5%; }
-
-  .d-1of9 {
-    float: left;
-    padding-right: 0.75em;
-    width: 11.1111111111%; }
-
-  .d-1of10 {
-    float: left;
-    padding-right: 0.75em;
-    width: 10%; }
-
-  .d-1of11 {
-    float: left;
-    padding-right: 0.75em;
-    width: 9.09090909091%; }
-
-  .d-1of12 {
-    float: left;
-    padding-right: 0.75em;
-    width: 8.33%; } }
 /*********************
 IMPORTING MODULES
 *********************/
@@ -1294,6 +1078,9 @@ body {
   background-color: #eaedf2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+img {
+  max-width: 100%; }
 
 /********************
 WORDPRESS BODY CLASSES

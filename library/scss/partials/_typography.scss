@@ -125,10 +125,17 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: $h2-font-size;
-  line-height: $h2-line-height;
-  margin-top: $h2-margin-top;
-  margin-bottom: $h2-margin-bottom;
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+  margin-top: $h3-margin-top;
+  margin-bottom: $h3-margin-bottom;
+
+  @media (min-width: $tablet) {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    margin-top: $h2-margin-top;
+    margin-bottom: $h2-margin-bottom;
+  }
 }
 
 h3, .h3 {
