@@ -120,6 +120,10 @@ HEADER STYLES
 
 .ctr-logo {
 	padding: $base-font-size;
+
+	@media (min-width: $tablet) {
+		float: left;
+	}
 }
 
 .logo {
@@ -128,6 +132,7 @@ HEADER STYLES
 	text-decoration: none;
 
 	.logo__description {
+		display: none;
 		font-size: $base-font-size;
 	}
 }
@@ -151,6 +156,11 @@ and more scalable.
 	li {
 		border-top: 1px solid $blue-dark;
 
+		@media (min-width: $tablet) {
+			float: left;
+			border-top: none;
+		}
+
 		a {
 			display: block;
 			color: $white;
@@ -158,17 +168,10 @@ and more scalable.
 			padding: $base-font-size;
 			opacity: 0.6;
 
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
 			&:hover, &:focus {
-				@media (min-width: $mobile) {
-					opacity: 1;
-					text-decoration: underline;
-				}
+				opacity: 1;
+				color: $white;
+				text-decoration: underline;
 			}
 		}
 

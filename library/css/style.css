@@ -1174,12 +1174,16 @@ HEADER STYLES
 
 .ctr-logo {
   padding: 1rem; }
+  @media (min-width: 768px) {
+    .ctr-logo {
+      float: left; } }
 
 .logo {
   font-size: 1.5rem;
   color: white !important;
   text-decoration: none; }
   .logo .logo__description {
+    display: none;
     font-size: 1rem; }
 
 /*********************
@@ -1207,22 +1211,20 @@ and more scalable.
     depend on the project. Here's some great info on it:
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
+    @media (min-width: 768px) {
+      .nav li {
+        float: left;
+        border-top: none; } }
     .nav li a {
       display: block;
       color: #fff;
       text-decoration: none;
       padding: 1rem;
-      opacity: 0.6;
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
-      @media (min-width: 481px) {
-        .nav li a:hover, .nav li a:focus {
-          opacity: 1;
-          text-decoration: underline; } }
+      opacity: 0.6; }
+      .nav li a:hover, .nav li a:focus {
+        opacity: 1;
+        color: #fff;
+        text-decoration: underline; }
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
