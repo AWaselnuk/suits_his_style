@@ -1228,6 +1228,18 @@ and more scalable.
       padding-left: 30px; }
 
 /* end .nav */
+.nav-main {
+  display: none; }
+  .nav-main.active {
+    display: block; }
+  @media (min-width: 768px) {
+    .nav-main {
+      display: block; } }
+
+@media (min-width: 768px) {
+  .btn-toggle-nav {
+    display: none; } }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/

@@ -104,17 +104,33 @@ function loadGravatars() {
 	}
 } // end function
 
-
 /*
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
 
-  /*
-   * Let's fire off the gravatar function
-   * You can remove this if you don't need it
-  */
-  loadGravatars();
+  // Main navbar
+  function initMainNav() {
+    var navIsActive = false;
+    var nav = $('.js-nav-main');
+    var toggleBtn = nav.parent().find('.btn-toggle-nav');
 
+    function toggleMainNav() {
+      if (navIsActive) {
+        nav.removeClass('active');
+        toggleBtn.text('Show Menu');
+      } else {
+        nav.addClass('active');
+        toggleBtn.text('Hide Menu');
+      }
+
+      navIsActive = !navIsActive;
+    }
+
+    toggleBtn.click(toggleMainNav);
+  }
+
+  initMainNav();
+  loadGravatars();
 
 }); /* end of as page load scripts */

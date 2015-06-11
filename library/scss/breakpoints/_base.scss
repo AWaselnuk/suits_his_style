@@ -219,6 +219,23 @@ and more scalable.
 
 } /* end .nav */
 
+.nav-main {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+
+	@media (min-width: $tablet) {
+		display: block;
+	}
+}
+
+.btn-toggle-nav {
+	@media (min-width: $tablet) {
+		display: none;
+	}
+}
 
 /*********************
 POSTS & CONTENT STYLES
