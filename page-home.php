@@ -35,9 +35,9 @@
 
   </div>
 
-  <div class="row row-dark">
-    <div class="col">
-      <blockquote class="text-lead">
+  <div class="row row-full row-dark">
+    <div class="col col-full">
+      <blockquote class="blockquote-row">
         "Thank you again for everything! You were so helpful and my confidence is through the roof. The experience couldn’t be more friendly and the generosity unmatched."
         <footer><cite>- Carl</cite></footer>
       </blockquote>
@@ -56,9 +56,9 @@
     </div>
   </div>
 
-  <div class="row row-dark">
-    <div class="col">
-      <blockquote class="text-lead">
+  <div class="row row-full row-dark">
+    <div class="col col-full">
+      <blockquote class="blockquote-row">
         "Good Afternoon,<br>
         I am writing to inform you that I was successful with my interview today and I have been scheduled to start May 1st, 2015. I just want to thank you guys so much for suiting me for the interview."
         <footer><cite>- Anthony</cite></footer>

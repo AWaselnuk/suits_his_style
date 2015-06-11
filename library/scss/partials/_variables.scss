@@ -40,6 +40,7 @@ $blue-dark:         darken($blue, 10%);
 
 $pink:              #f01d4f;
 $yellow:            #EBB129;
+$yellow-light:      lighten($yellow, 10%);
 
 $link-color:        $bones-pink;
 $link-hover:        darken($link-color, 9%);

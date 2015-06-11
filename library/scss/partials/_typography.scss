@@ -196,7 +196,17 @@ blockquote {
   font-style: italic;
   margin: 0;
 
+  @media (min-width: $tablet) {
+    font-size: $lead-font-size;
+    line-height: $lead-line-height;
+  }
+
   footer {
     margin-top: $vertical-space;
   }
+}
+
+.blockquote-row {
+  margin: 0 auto;
+  max-width: $measure;
 }

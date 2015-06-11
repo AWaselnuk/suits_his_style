@@ -572,8 +572,16 @@ blockquote {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   font-style: italic;
   margin: 0; }
+  @media (min-width: 768px) {
+    blockquote {
+      font-size: 1.25rem;
+      line-height: 1.75rem; } }
   blockquote footer {
     margin-top: 1rem; }
+
+.blockquote-row {
+  margin: 0 auto;
+  max-width: 760px; }
 
 /******************************************************************
 Site Name:
@@ -664,15 +672,41 @@ BOX SIZING
 probably best not to use it. I mean, were you going to anyway? */
 .row {
   padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  max-width: 1080px; }
+  @media (min-width: 768px) {
+    .row {
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
 
 .row-dark {
   background-color: #eaedf2; }
 
+.row-full {
+  max-width: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
 .col {
   padding-left: 1rem;
   padding-right: 1rem; }
+  @media (min-width: 481px) {
+    .col {
+      float: left; } }
 
+.col-full {
+  float: none; }
+
+@media (min-width: 481px) {
+  .col-third {
+    width: 33.33%; }
+
+  .col-two-thirds {
+    width: 66.66%; }
+
+  .col-half {
+    width: 50%; } }
 /*********************
 IMPORTING MODULES
 *********************/
@@ -763,6 +797,11 @@ and it will create a button dependant on those variables.
 .btn-cta,
 .btn-primary {
   background-color: #EBB129; }
+  .btn-cta:hover, .btn-cta:active, .btn-cta:focus,
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:focus {
+    background-color: #efc258; }
 
 .btn-cta {
   padding: 0.75em 1em;
@@ -1816,6 +1855,13 @@ query for retina AND a certain size if you want. Go Nuts.
   background-image: url(../images/ottawa.jpg); }
   .home-banner .home-banner__text {
     color: white; }
+    @media (min-width: 768px) {
+      .home-banner .home-banner__text {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.25rem;
+        line-height: 3rem;
+        max-width: 60%; } }
   .home-banner .home-banner__cta {
     margin-top: 1rem; }
 

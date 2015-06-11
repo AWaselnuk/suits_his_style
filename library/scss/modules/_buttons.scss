@@ -65,6 +65,10 @@ and it will create a button dependant on those variables.
 .btn-cta,
 .btn-primary {
   background-color: $yellow;
+
+  &:hover, &:active, &:focus {
+    background-color: $yellow-light;
+  }
 }
 
 .btn-cta {

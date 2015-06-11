@@ -7,6 +7,14 @@
 
   .home-banner__text {
     color: white;
+
+    @media (min-width: $tablet) {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: $h2-font-size;
+      line-height: $h2-line-height;
+      max-width: 60%;
+    }
   }
 
   .home-banner__cta {
