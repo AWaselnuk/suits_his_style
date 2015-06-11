@@ -65,7 +65,7 @@ $base-line-height: 1.5rem;
 $measure: 760px;
 
 $lead-font-size: 1.25rem;
-$lead-line-height: 1.75rem;
+$lead-line-height: 1.875rem;
 
 $h1-font-size: 3.375rem;
 $h1-line: 1.5rem;
@@ -136,6 +136,10 @@ h2, .h2 {
     line-height: $h2-line-height;
     margin-top: $h2-margin-top;
     margin-bottom: $h2-margin-bottom;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 

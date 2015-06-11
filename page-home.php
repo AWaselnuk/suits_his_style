@@ -23,7 +23,7 @@
 
     <div class="col col-two-thirds">
       <h2>9999 Men don't have what they need to get employed.</h2>
-      <p>
+      <p class="text-lead">
         This is a difficult problem because blah blah blah, but we have a simple solution.
         Providing professional attire to these men gives them the confidence they need to succeed in job interviews and transform opportunities into careers.
       </p>
@@ -51,8 +51,8 @@
 
     <div class="col col-two-thirds">
       <h2>How does this work?</h2>
-      <p>Talk briefly about the client referral system.</p>
-      <p>Demonstrate some concrete example of the simplicity of the idea and the impact it has.</p>
+      <p class="text-lead">Talk briefly about the client referral system.</p>
+      <p class="text-lead">Demonstrate some concrete example of the simplicity of the idea and the impact it has.</p>
     </div>
   </div>
 
@@ -73,20 +73,20 @@
 
     <div class="col col-two-thirds">
       <h2>How can I help?</h2>
-      <p>
+      <p class="text-lead">
         <strong>Suits His Style could not exist without your donations.</strong>
       </p>
-      <p>
+      <p class="text-lead">
         Your generous donation of time, clothing, or money can ensure that Suits His Style continues to make a real difference for unemployed men in need.
       </p>
       <!-- TODO: Add WP path -->
       <p><a class="btn btn-primary" href="/donate">Donate Now</a></p>
 
       <br>
-      <p>
+      <p class="text-lead">
         <strong>Suits His Style is organized and operated entirely by our amazing volunteers.</strong>
       </p>
-      <p>
+      <p class="text-lead">
         Briefly list some benefits of volunteering:
       </p>
       <ul>

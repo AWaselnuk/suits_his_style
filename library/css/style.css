@@ -522,7 +522,9 @@ h2, .h2 {
       font-size: 2.25rem;
       line-height: 3rem;
       margin-top: 3rem;
-      margin-bottom: 1.5rem; } }
+      margin-bottom: 1.5rem; }
+      h2:first-child, .h2:first-child {
+        margin-top: 0; } }
 
 h3, .h3 {
   font-size: 1.5rem;
@@ -566,7 +568,7 @@ p {
 @media (min-width: 768px) {
   .text-lead {
     font-size: 1.25rem;
-    line-height: 1.75rem; } }
+    line-height: 1.875rem; } }
 
 blockquote {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif;
@@ -575,7 +577,7 @@ blockquote {
   @media (min-width: 768px) {
     blockquote {
       font-size: 1.25rem;
-      line-height: 1.75rem; } }
+      line-height: 1.875rem; } }
   blockquote footer {
     margin-top: 1rem; }
 
@@ -1141,6 +1143,9 @@ body {
 
 img {
   max-width: 100%; }
+
+.img-framed {
+  border: 1px solid #ccc; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1851,7 +1856,7 @@ query for retina AND a certain size if you want. Go Nuts.
   padding: 3rem 1rem;
   text-align: center;
   font-size: 1.25rem;
-  line-height: 1.75rem;
+  line-height: 1.875rem;
   background-image: url(../images/ottawa.jpg); }
   .home-banner .home-banner__text {
     color: white; }
