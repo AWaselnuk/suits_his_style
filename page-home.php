@@ -9,7 +9,7 @@
 <?php get_header(); ?>
 
 <div class="home-banner background-image">
-  <p class="home-banner__text">Suits his Style is a not-for-profit corporation that helps men in need achieve their career goals.</p>
+  <p class="home-banner__text">Suits his Style is a not-for-profit corporation<br>that helps men in need achieve their career goals.</p>
   <button class="btn btn-cta home-banner__cta">I want to learn more</button>
 </div>
 

@@ -1894,7 +1894,12 @@ query for retina AND a certain size if you want. Go Nuts.
   font-size: 1.25rem;
   line-height: 1.875rem;
   background-image: url(../images/ottawa.jpg); }
+  @media (min-width: 1030px) {
+    .home-banner {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
   .home-banner .home-banner__text {
+    margin-top: 0;
     color: white; }
     @media (min-width: 768px) {
       .home-banner .home-banner__text {
@@ -1902,7 +1907,10 @@ query for retina AND a certain size if you want. Go Nuts.
         margin-right: auto;
         font-size: 2.25rem;
         line-height: 3rem;
-        max-width: 60%; } }
+        max-width: 90%; } }
+    @media (min-width: 1030px) {
+      .home-banner .home-banner__text {
+        max-width: 75%; } }
   .home-banner .home-banner__cta {
     margin-top: 1rem; }
 

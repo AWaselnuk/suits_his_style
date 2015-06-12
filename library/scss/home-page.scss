@@ -5,7 +5,13 @@
   line-height: $lead-line-height;
   background-image: url(../images/ottawa.jpg);
 
+  @media (min-width: $desktop) {
+    padding-top: $vertical-space-large * 2;
+    padding-bottom: $vertical-space-large * 2;
+  }
+
   .home-banner__text {
+    margin-top: 0;
     color: white;
 
     @media (min-width: $tablet) {
@@ -13,7 +19,11 @@
       margin-right: auto;
       font-size: $h2-font-size;
       line-height: $h2-line-height;
-      max-width: 60%;
+      max-width: 90%;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 75%;
     }
   }
 
