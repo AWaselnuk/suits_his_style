@@ -9,8 +9,43 @@
 <?php get_header(); ?>
 
 <div class="home-banner background-image">
-  <p class="home-banner__text">Suits his Style is a not-for-profit corporation<br>that helps men in need achieve their career goals.</p>
-  <button class="btn btn-cta home-banner__cta">I want to learn more</button>
+
+  <div class="home-banner__initial js-initial-banner">
+    <p class="home-banner__text">Suits his Style is a not-for-profit corporation<br>that helps men in need achieve their career goals.</p>
+    <button class="btn btn-cta home-banner__cta js-trigger-learn-more">I want to learn more</button>
+  </div>
+
+  <div class="row home-banner__learn-more js-learn-more">
+    <div class="col col-third">
+      <a class="home-banner__link">
+        <p class="text-lead">Career boosting services for men in need</p>
+
+        <p>
+          Here is some short punchy text about our services and how effective they are.
+        </p>
+      </a>
+    </div>
+
+    <div class="col col-third">
+      <a class="home-banner__link">
+        <p class="text-lead">Fulfilling volunteer opportunites</p>
+
+        <p>
+          Oh my god volunteering is amazing you have no idea how great it is!
+        </p>
+      </a>
+    </div>
+
+    <div class="col col-third">
+      <a class="home-banner__link">
+        <p class="text-lead">We count on your donations</p>
+
+        <p>
+          Read on to find out about how you can donate money or materials. We also have partnership and sponsorship opportunites.
+        </p>
+      </a>
+    </div>
+  </div>
 </div>
 
 <main>
@@ -98,6 +133,16 @@
       </ul>
       <!-- TODO: Add WP path -->
       <p><a class="btn btn-primary" href="/volunteer">Learn more about volunteer opportunities &raquo;</a></p>
+
+      <br>
+      <p class="text-lead">
+        <strong>Let's become partners.</strong>
+      </p>
+      <p class="text-lead">
+        Talk about partnership and sponsorship opportunites.
+      </p>
+      <!-- TODO: Add WP path -->
+      <p><a class="btn btn-primary" href="/volunteer">Learn more about partnership opportunities &raquo;</a></p>
     </div>
   </div>
 

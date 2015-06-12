@@ -130,7 +130,22 @@ jQuery(document).ready(function($) {
     toggleBtn.click(toggleMainNav);
   }
 
+  // Learn More Button
+  function initLearnMore() {
+    var learnMore = $('.js-learn-more');
+    var initialLearnMore = $('.js-initial-banner');
+    var triggerLearnMore = $('.js-trigger-learn-more');
+    var animationTime = 400;
+
+    triggerLearnMore.click(function() {
+      initialLearnMore.fadeOut(animationTime, function() {
+        learnMore.fadeIn(animationTime);
+      });
+    });
+  }
+
   initMainNav();
+  initLearnMore();
   loadGravatars();
 
 }); /* end of as page load scripts */

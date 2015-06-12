@@ -1,18 +1,37 @@
+$banner-height: 500px;
+$banner-link-height: 280px;
+
 .home-banner {
+  position: relative;
   padding: $vertical-space-large $gutter;
   text-align: center;
-  font-size: $lead-font-size;
-  line-height: $lead-line-height;
   background-image: url(../images/ottawa.jpg);
 
   @media (min-width: $desktop) {
+    min-height: $banner-height;
     padding-top: $vertical-space-large * 2;
     padding-bottom: $vertical-space-large * 2;
+  }
+
+  .home-banner__initial {
+    @media (min-width: $desktop) {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      @include transform(translateY(-50%));
+    }
+  }
+
+  .home-banner__learn-more {
+    display: none;
   }
 
   .home-banner__text {
     margin-top: 0;
     color: white;
+    font-size: $lead-font-size;
+    line-height: $lead-line-height;
 
     @media (min-width: $tablet) {
       margin-left: auto;
@@ -27,7 +46,30 @@
     }
   }
 
+  .home-banner__link {
+    display: block;
+    padding: $base-line-height;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+    height: $banner-link-height;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
   .home-banner__cta {
     margin-top: $vertical-space;
+  }
+
+  .row {
+    padding: 0;
   }
 }
