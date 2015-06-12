@@ -28,6 +28,11 @@
   @media(min-width: $mobile) {
     float: left;
   }
+
+  @media(min-width: $tablet) {
+    padding-left: $gutter * 2;
+    padding-right: $gutter * 2;
+  }
 }
 
 .col-full {

@@ -696,6 +696,10 @@ probably best not to use it. I mean, were you going to anyway? */
   @media (min-width: 481px) {
     .col {
       float: left; } }
+  @media (min-width: 768px) {
+    .col {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
 
 .col-full {
   float: none; }
@@ -1626,6 +1630,38 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+.footer a,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus {
+  color: #fff; }
+
+.footer-posts .footer-post {
+  padding: 1rem 0;
+  border-top: 1px solid #1f2b37; }
+.footer-posts .footer-post__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold; }
+  @media (min-width: 481px) {
+    .footer-posts .footer-post__heading {
+      font-size: 1.25rem;
+      line-height: 1.875rem; } }
+  .footer-posts .footer-post__heading a {
+    text-decoration: underline; }
+.footer-posts .footer-post__meta {
+  font-style: italic;
+  color: #eaedf2; }
+.footer-posts .footer-post__content {
+  color: #eaedf2; }
+.footer-posts .excerpt-read-more {
+  display: block;
+  margin-top: 1.5rem;
+  opacity: 1; }
+
+.footer-nav {
+  margin: 0; }
+
 /*============================================================================
   UTILITIES
 ==============================================================================*/

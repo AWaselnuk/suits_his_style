@@ -882,7 +882,53 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+.footer a,
+.footer a:visited,
+.footer a:hover,
+.footer a:focus {
+	color: $white;
+}
+
+.footer-posts {
+	.footer-post {
+		padding: $vertical-space 0;
+		border-top: 1px solid $blue-dark;
+	}
+
+	.footer-post__heading {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-weight: bold;
+
+		@media (min-width: $mobile) {
+			font-size: $lead-font-size;
+			line-height: $lead-line-height;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	.footer-post__meta {
+		font-style: italic;
+		color: $gray;
+	}
+
+	.footer-post__content{
+		color: $gray;
+	}
+
+	.excerpt-read-more {
+		display: block;
+		margin-top: $base-line-height;
+		opacity: 1;
+	}
+}
+
+.footer-nav {
+	margin: 0;
+}
 
 /*============================================================================
   UTILITIES
