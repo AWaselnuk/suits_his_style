@@ -36,8 +36,6 @@
           <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
         </footer>
 
-        <hr>
-
         <p><a href="<?php echo site_url() . '/whats-new' ?>">&laquo; View all articles.</a></p>
 
       </div>

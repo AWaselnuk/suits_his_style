@@ -1,13 +1,12 @@
 .post-header,
 .post-content,
 .post-footer {
-  padding-bottom: $vertical-space * 2;
+  padding-top: $vertical-space;
+  padding-bottom: $vertical-space;
 }
 
 .post-header {
-  @media (max-width: $tablet) {
-    padding-top: $vertical-space * 2;
-  }
+
 }
 
 .post-title {
@@ -17,4 +16,9 @@
 .post-time-and-author {
   font-style: italic;
   margin-top: $vertical-space / 2;
+}
+
+.post-footer {
+  border-top: 1px solid $blue-white;
+  border-bottom: 1px solid $blue-white;
 }
