@@ -3,7 +3,7 @@
 				<div class="row">
 
           <div class="col col-half">
-            <h3>Read our Blog</h3>
+            <h3>What's New</h3>
 
 
             <ul class="footer-posts">

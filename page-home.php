@@ -70,16 +70,7 @@
 
   </div>
 
-  <div class="row row-full row-dark">
-    <div class="col col-full">
-      <blockquote class="blockquote-row">
-        "Thank you again for everything! You were so helpful and my confidence is through the roof. The experience couldn’t be more friendly and the generosity unmatched."
-        <footer><cite>- Carl</cite></footer>
-      </blockquote>
-    </div>
-  </div>
-
-  <div class="row">
+<!--   <div class="row">
     <div class="col col-third">
       <img src="<?php bloginfo('stylesheet_directory'); ?>/library/images/client-photos/team1.jpg" alt="A Suits His Style volunteer helping to suit a client.">
     </div>
@@ -89,7 +80,7 @@
       <p class="text-lead">Talk briefly about the client referral system.</p>
       <p class="text-lead">Demonstrate some concrete example of the simplicity of the idea and the impact it has.</p>
     </div>
-  </div>
+  </div> -->
 
   <div class="row row-full row-dark">
     <div class="col col-full">
@@ -143,6 +134,15 @@
       </p>
       <!-- TODO: Add WP path -->
       <p><a class="btn btn-primary" href="/volunteer">Learn more about partnership opportunities &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="row row-full row-dark">
+    <div class="col col-full">
+      <blockquote class="blockquote-row">
+        "Thank you again for everything! You were so helpful and my confidence is through the roof. The experience couldn’t be more friendly and the generosity unmatched."
+        <footer><cite>- Carl</cite></footer>
+      </blockquote>
     </div>
   </div>
 
