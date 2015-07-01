@@ -36,6 +36,8 @@ $green:             #7dd667;
 
 $bones-pink:        #f01d4f;
 $blue:              #314558;
+$blue-white:        lighten($blue, 60%);
+$blue-light:        lighten($blue, 30%);
 $blue-dark:         darken($blue, 10%);
 
 $pink:              #f01d4f;

@@ -1,54 +1,63 @@
 <?php get_header(); ?>
 
-			<div id="content">
+<main class="post" role="main">
 
-				<div id="inner-content" class="wrap cf">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+  <article id="post-<?php the_ID(); ?>">
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="row row-narrow">
+      <div class="col col-full">
+        <header class="post-header">
+          <h1 class="post-title h2" rel="bookmark"><?php the_title(); ?></h1>
 
-							<?php
-								/*
-								 * Ah, post formats. Nature's greatest mystery (aside from the sloth).
-								 *
-								 * So this function will bring in the needed template file depending on what the post
-								 * format is. The different post formats are located in the post-formats folder.
-								 *
-								 *
-								 * REMEMBER TO ALWAYS HAVE A DEFAULT ONE NAMED "format.php" FOR POSTS THAT AREN'T
-								 * A SPECIFIC POST FORMAT.
-								 *
-								 * If you want to remove post formats, just delete the post-formats folder and
-								 * replace the function below with the contents of the "format.php" file.
-								*/
-								get_template_part( 'post-formats/format', get_post_format() );
-							?>
+          <p class="post-time-and-author">
+            <?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
+               /* the time the post was published */
+               '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
+               /* the author of the post */
+               '<span class="by">'.__( 'by', 'bonestheme' ).'</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
+            ); ?>
+          </p>
+        </header>
 
-						<?php endwhile; ?>
+        <?php if (has_post_thumbnail()): ?>
+        <?php $thumbnailUrl = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+        <img class="post-banner" alt="Featured image for <?php echo the_title(); ?>" src="<?php echo $thumbnailUrl; ?>">
+        <?php endif; ?>
 
-						<?php else : ?>
+        <section class="post-content">
+          <?php the_content() ?>
+        </section>
 
-							<article id="post-not-found" class="hentry cf">
-									<header class="article-header">
-										<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-									</header>
-									<section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-									</section>
-									<footer class="article-footer">
-											<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
-									</footer>
-							</article>
+        <footer class="post-footer">
+          <?php printf( __( 'Filed under', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
 
-						<?php endif; ?>
+          <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+        </footer>
 
-					</main>
+        <hr>
 
-					<?php get_sidebar(); ?>
+        <p><a href="<?php echo site_url() . '/whats-new' ?>">&laquo; View all articles.</a></p>
 
-				</div>
+      </div>
+    </div>
 
-			</div>
+  </article>
+
+
+<?php endwhile; ?>
+<?php else : ?>
+
+  <article id="post-not-found" class="row row-narrow">
+    <div class="col col-full">
+      <h1>Oops! Post not found.</h1>
+      <p><a href="<?php echo site_url() . '/whats-new' ?>">View all articles.</a></p>
+    </div>
+  </article>
+
+<?php endif; ?>
+
+</main>
 
 <?php get_footer(); ?>

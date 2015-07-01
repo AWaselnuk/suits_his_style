@@ -1162,6 +1162,10 @@ img {
 .img-framed {
   border: 1px solid #ccc; }
 
+hr {
+  border: none;
+  border-bottom: 1px solid #d4dee7; }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -1984,6 +1988,22 @@ query for retina AND a certain size if you want. Go Nuts.
 
 .page-banner-client-resources {
   background-image: url("../images/banners/client-resources.jpg"); }
+
+.post-header,
+.post-content,
+.post-footer {
+  padding-bottom: 2rem; }
+
+@media (max-width: 768px) {
+  .post-header {
+    padding-top: 2rem; } }
+
+.post-title {
+  margin-bottom: 0; }
+
+.post-time-and-author {
+  font-style: italic;
+  margin-top: 0.5rem; }
 
 /*********************
 PRINT STYLESHEET

@@ -32,6 +32,11 @@ img {
 	border: $border;
 }
 
+hr {
+	border: none;
+	border-bottom: 1px solid $blue-white;
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
