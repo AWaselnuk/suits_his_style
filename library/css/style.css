@@ -1968,10 +1968,19 @@ query for retina AND a certain size if you want. Go Nuts.
 
 /*================ Banner Images ================*/
 .page-banner-default {
-  background-image: url(../images/ottawa.jpg); }
+  background-image: url(../images/home.jpg); }
 
 .page-banner-about-us {
-  background-image: url(../images/banners/about-us.jpg); }
+  background-image: url("../images/banners/about-us.jpg"); }
+
+.page-banner-volunteer {
+  background-image: url("../images/banners/volunteer.jpg"); }
+
+.page-banner-support-us {
+  background-image: url("../images/banners/support-us.jpg"); }
+
+.page-banner-client-resources {
+  background-image: url("../images/banners/client-resources.jpg"); }
 
 /*********************
 PRINT STYLESHEET

@@ -30,7 +30,11 @@ switch ($pagename) {
 
 <main>
 
-  <?php the_content(); ?>
+<div class="row">
+  <div class="col col-full">
+    <?php the_content(); ?>
+  </div>
+</div>
 
 </main>
 
