@@ -21,6 +21,10 @@
   padding-bottom: $vertical-space * 2;
 }
 
+.row-narrow {
+  max-width: 810px;
+}
+
 .col {
   padding-left: $gutter;
   padding-right: $gutter;

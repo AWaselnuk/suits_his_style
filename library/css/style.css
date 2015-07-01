@@ -696,6 +696,9 @@ probably best not to use it. I mean, were you going to anyway? */
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
+.row-narrow {
+  max-width: 810px; }
+
 .col {
   padding-left: 1rem;
   padding-right: 1rem;
