@@ -1900,7 +1900,7 @@ query for retina AND a certain size if you want. Go Nuts.
   position: relative;
   padding: 3rem 1rem;
   text-align: center;
-  background-image: url(../images/ottawa.jpg); }
+  background-image: url(../images/banners/home.jpg); }
   @media (min-width: 1030px) {
     .home-banner {
       min-height: 500px;
