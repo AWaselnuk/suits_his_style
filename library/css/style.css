@@ -445,7 +445,7 @@ use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
 /*================ Breakpoints ================*/
-/*================ Measurments ================*/
+/*================ Measurements ================*/
 /******************************************************************
 Site Name:
 Author:
@@ -505,12 +505,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   /* removing text decoration from all headline links */ }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
+  h1:first-child, .h1:first-child, h2:first-child, .h2:first-child, h3:first-child, .h3:first-child, h4:first-child, .h4:first-child, h5:first-child, .h5:first-child {
+    margin-top: 0; }
 
 h1, .h1 {
-  font-size: 3.375rem;
-  line-height: 4.5rem;
+  font-size: 2.25rem;
+  line-height: 3rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    h1, .h1 {
+      font-size: 3.375rem;
+      line-height: 4.5rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem; } }
 
 h2, .h2 {
   font-size: 1.5rem;
@@ -522,9 +530,7 @@ h2, .h2 {
       font-size: 2.25rem;
       line-height: 3rem;
       margin-top: 3rem;
-      margin-bottom: 1.5rem; }
-      h2:first-child, .h2:first-child {
-        margin-top: 0; } }
+      margin-bottom: 1.5rem; } }
 
 h3, .h3 {
   font-size: 1.5rem;
@@ -692,14 +698,16 @@ probably best not to use it. I mean, were you going to anyway? */
 
 .col {
   padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  margin-bottom: 1rem; }
   @media (min-width: 481px) {
     .col {
       float: left; } }
   @media (min-width: 768px) {
     .col {
       padding-left: 2rem;
-      padding-right: 2rem; } }
+      padding-right: 2rem;
+      margin-bottom: 0; } }
 
 .col-full {
   float: none; }
@@ -1945,6 +1953,25 @@ query for retina AND a certain size if you want. Go Nuts.
     margin-top: 1rem; }
   .home-banner .row {
     padding: 0; }
+
+.page-banner {
+  position: relative;
+  color: white; }
+  .page-banner .page-banner__text {
+    margin-top: 0;
+    font-size: 1.25rem;
+    line-height: 1.875rem; }
+    @media (min-width: 768px) {
+      .page-banner .page-banner__text {
+        font-size: 1.5rem;
+        line-height: 1.5em; } }
+
+/*================ Banner Images ================*/
+.page-banner-default {
+  background-image: url(../images/ottawa.jpg); }
+
+.page-banner-about-us {
+  background-image: url(../images/banners/about-us.jpg); }
 
 /*********************
 PRINT STYLESHEET
