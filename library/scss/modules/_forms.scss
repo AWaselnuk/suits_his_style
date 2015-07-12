@@ -38,14 +38,14 @@ input[type="color"],
 select,
 textarea,
 .field {
+  box-sizing: border-box;
   display: block;
   height: 40px;
   line-height: 1em;
-  padding: 0 12px;
+  padding: 0 $gutter;
   margin-bottom: 14px;
   font-size: 1em;
   color: $text-color;
-  border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
   border: 0;
@@ -59,7 +59,7 @@ textarea,
   &:focus,
   &:active {
     background-color: lighten($gray, 4%);
-    outline: none; 
+    outline: none;
   } // end hover or focus
 
   // error notification
@@ -107,6 +107,12 @@ input[type="password"] {
   letter-spacing: 0.3em;
 }
 
+label {
+  display: inline-block;
+  margin-bottom: $vertical-space;
+  font-weight: bold;
+}
+
 // textareas
 textarea {
   max-width: 100%;
@@ -125,4 +131,26 @@ select {
   background-position: 97.5% center;
 }
 
+/*================ Inline Form ================*/
 
+.form-inline {
+  $form-inline-height: 40px;
+
+  .form-inline__container {
+    position: relative;
+    height: $form-inline-height;
+  }
+
+  .form-inline__input {
+    height: $form-inline-height;
+  }
+
+  .form-inline__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: $form-inline-height;
+    line-height: 1em;
+  }
+}

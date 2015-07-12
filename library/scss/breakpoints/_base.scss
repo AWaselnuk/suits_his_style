@@ -826,6 +826,8 @@ SIDEBARS & ASIDES
 	.widgettitle {}
 
 	.widget {
+		margin: 0;
+		margin-bottom: $vertical-space-large;
 
 		ul {
 
@@ -854,6 +856,12 @@ SIDEBARS & ASIDES
 		border-radius: 2px;
 		margin-bottom: 1.5em;
 	}
+
+.sidebar {
+	.widgettitle {
+		font-weight: bold;
+	}
+}
 
 /*********************
 FOOTER STYLES
