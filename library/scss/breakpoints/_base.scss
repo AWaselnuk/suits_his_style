@@ -124,6 +124,7 @@ HEADER STYLES
 *********************/
 
 .header {
+	position: relative;
 	background-color: $black;
 }
 
@@ -182,6 +183,11 @@ and more scalable.
 				color: $white;
 				text-decoration: underline;
 			}
+
+			&.btn-donate {
+				background-color: $yellow;
+				opacity: 1;
+			}
 		}
 
 		&:first-child {}
@@ -231,6 +237,7 @@ and more scalable.
 
 } /* end .nav */
 
+// Wraps the navs
 .nav-main {
 	display: none;
 
@@ -243,7 +250,30 @@ and more scalable.
 	}
 }
 
+.btn-donate {
+	font-weight: bold;
+}
+
+.nav.nav-right-side {
+
+	@media (min-width: $tablet) {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		.btn-donate {
+			text-align: center;
+			font-size: $h3-font-size;
+			min-width: 130px;
+			min-height: 59px;
+		}
+	}
+}
+
 .btn-toggle-nav {
+	&:focus {
+		outline: none;
+	}
 	@media (min-width: $tablet) {
 		display: none;
 	}

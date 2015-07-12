@@ -1255,6 +1255,7 @@ H1, H2, H3, H4, H5 STYLES
 HEADER STYLES
 *********************/
 .header {
+  position: relative;
   background-color: #323944; }
 
 .ctr-logo {
@@ -1310,6 +1311,9 @@ and more scalable.
         opacity: 1;
         color: #fff;
         text-decoration: underline; }
+      .nav li a.btn-donate {
+        background-color: #EBB129;
+        opacity: 1; }
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
@@ -1323,6 +1327,22 @@ and more scalable.
     .nav-main {
       display: block; } }
 
+.btn-donate {
+  font-weight: bold; }
+
+@media (min-width: 768px) {
+  .nav.nav-right-side {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .nav.nav-right-side .btn-donate {
+      text-align: center;
+      font-size: 1.5rem;
+      min-width: 130px;
+      min-height: 59px; } }
+
+.btn-toggle-nav:focus {
+  outline: none; }
 @media (min-width: 768px) {
   .btn-toggle-nav {
     display: none; } }

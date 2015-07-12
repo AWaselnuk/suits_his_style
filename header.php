@@ -46,39 +46,40 @@
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
-				<div id="inner-header" class="wrap cf">
 
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<div id="logo" class="ctr-logo" itemscope itemtype="http://schema.org/Organization">
-            <a class="logo" href="<?php echo home_url(); ?>" rel="nofollow">
-              <?php bloginfo('name'); ?><br>
-              <span class="logo__description"><?php bloginfo('description'); ?></span>
-            </a>
-          </div>
+				<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
+				<div id="logo" class="ctr-logo" itemscope itemtype="http://schema.org/Organization">
+          <a class="logo" href="<?php echo home_url(); ?>" rel="nofollow">
+            <?php bloginfo('name'); ?><br>
+            <span class="logo__description"><?php bloginfo('description'); ?></span>
+          </a>
+        </div>
 
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
+				<?php // if you'd like to use the site description you can un-comment it below ?>
+				<?php // bloginfo('description'); ?>
 
 
-					<nav class="nav-main js-nav-main" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<?php wp_nav_menu(array(
-    					         'container' => false,                            // remove nav container
-    					         'container_class' => 'menu cf nav-main',        // class of container (should you choose to use it)
-    					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
-    					         'theme_location' => 'main-nav',                 // where it's located in the theme
-    					         'before' => '',                                 // before the menu
-        			               'after' => '',                                  // after the menu
-        			               'link_before' => '',                            // before each link
-        			               'link_after' => '',                             // after each link
-        			               'depth' => 0,                                   // limit the depth of the nav
-    					         'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
+				<nav class="nav-main js-nav-main" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<?php wp_nav_menu(array(
+  					         'container' => false,                            // remove nav container
+  					         'container_class' => 'menu cf nav-main',        // class of container (should you choose to use it)
+  					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+  					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
+  					         'theme_location' => 'main-nav',                 // where it's located in the theme
+  					         'before' => '',                                 // before the menu
+      			               'after' => '',                                  // after the menu
+      			               'link_before' => '',                            // before each link
+      			               'link_after' => '',                             // after each link
+      			               'depth' => 0,                                   // limit the depth of the nav
+  					         'fallback_cb' => ''                             // fallback function (if there is one)
+					)); ?>
 
-					</nav>
+          <ul class="nav nav-right-side">
+            <li><a class="btn btn-primary btn-donate" href="<?php echo site_url() ?>/support-us">Donate</a></li>
+          </ul>
+				</nav>
 
-          <button class="btn-as-link btn-toggle-nav">Show Menu</button>
+        <button class="btn-as-link btn-toggle-nav">Show Menu</button>
 
-				</div>
 
 			</header>
