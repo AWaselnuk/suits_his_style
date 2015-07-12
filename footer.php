@@ -3,7 +3,7 @@
 				<div class="row">
 
           <div class="col col-half">
-            <h3>What's New</h3>
+            <h3><a href="<?php echo site_url('whats-new') ?>">What's New</a></h3>
 
 
             <ul class="footer-posts">
