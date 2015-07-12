@@ -1,3 +1,9 @@
+/*============================================================================
+  SINGLE POST AND POST LIST ITEMS
+==============================================================================*/
+
+$post-border: 1px solid $blue-white;
+
 .post-header,
 .post-content,
 .post-footer {
@@ -9,16 +15,35 @@
 
 }
 
-.post-title {
+.post-title,
+.post-item-title {
   margin-bottom: 0;
 }
 
-.post-time-and-author {
+.post-time-and-author,
+.post-item-time-and-author {
   font-style: italic;
   margin-top: $vertical-space / 2;
 }
 
 .post-footer {
-  border-top: 1px solid $blue-white;
-  border-bottom: 1px solid $blue-white;
+  border-top: $post-border;
+  border-bottom: $post-border;
+}
+
+.post-item {
+  padding-top: $vertical-space-large;
+  padding-bottom: $vertical-space-large;
+  border-top: $post-border;
+}
+
+.post-item-content {
+  padding-top: $vertical-space / 2;
+  padding-bottom: $vertical-space / 2;
+}
+
+.post-item-footer {
+  p {
+    margin-bottom: 0;
+  }
 }
