@@ -2038,7 +2038,11 @@ query for retina AND a certain size if you want. Go Nuts.
       cursor: pointer;
       background-color: rgba(255, 255, 255, 0.1); }
   .home-banner .home-banner__cta {
+    display: none;
     margin-top: 1rem; }
+    @media (min-width: 1030px) {
+      .home-banner .home-banner__cta {
+        display: inline-block; } }
   .home-banner .row {
     padding: 0; }
 

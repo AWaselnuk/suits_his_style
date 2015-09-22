@@ -76,7 +76,12 @@ $banner-link-height: 280px;
   }
 
   .home-banner__cta {
+    display: none;
     margin-top: $vertical-space;
+
+    @media (min-width: $desktop) {
+      display: inline-block;
+    }
   }
 
   .row {
