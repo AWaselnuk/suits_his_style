@@ -27,6 +27,16 @@ $banner-link-height: 280px;
     display: none;
   }
 
+  .home-banner__logo {
+    width: 200px;
+    margin-top: -(0.125 * 200px);
+
+    @media (min-width: $tablet) {
+      width: 300px;
+      margin-top: -(0.125 * 300px);
+    }
+  }
+
   .home-banner__text {
     margin-top: 0;
     color: white;

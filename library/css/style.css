@@ -1999,6 +1999,13 @@ query for retina AND a certain size if you want. Go Nuts.
       -o-transform: translateY(-50%); } }
   .home-banner .home-banner__learn-more {
     display: none; }
+  .home-banner .home-banner__logo {
+    width: 200px;
+    margin-top: -25px; }
+    @media (min-width: 768px) {
+      .home-banner .home-banner__logo {
+        width: 300px;
+        margin-top: -37.5px; } }
   .home-banner .home-banner__text {
     margin-top: 0;
     color: white;
