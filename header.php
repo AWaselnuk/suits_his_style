@@ -21,6 +21,23 @@
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+    <!-- HTML5 -->
+    <meta name="description" content="Suits his Style is an Ottawa based nonprofit that supports the employment opportunities of men in need by providing professional attire with the vision of a world in which everyone is given the opportunity to excel.">
+
+    <!-- FACEBOOK -->
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/library/images/logo.png">
+    <meta property="og:title" content="<?php wp_title(''); ?>">
+    <meta property="og:url" content="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>">
+    <meta property="og:site_name" content="Suits His Style">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>">
+    <meta name="twitter:title" content="<?php wp_title(''); ?>">
+    <meta name="twitter:description" content="Suits his Style is an Ottawa based nonprofit that supports the employment opportunities of men in need by providing professional attire with the vision of a world in which everyone is given the opportunity to excel.">
+    <meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/library/images/logo-tie.png">
+    <meta name="twitter:site" content="@SuitshisStyle">
+
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
