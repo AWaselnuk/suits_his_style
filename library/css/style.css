@@ -1287,19 +1287,24 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 .ctr-logo {
+  display: none;
   padding: 10px; }
   @media (min-width: 768px) {
     .ctr-logo {
+      display: block;
       float: left; } }
 
 .logo-tie {
-  display: inline-block;
+  display: none;
   width: 25px;
   height: 48px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 25px 48px;
   background-image: url("../images/logo-white-tie-monochrome.png"); }
+  @media (min-width: 768px) {
+    .logo-tie {
+      display: inline-block; } }
 
 .nav {
   border-bottom: 0;

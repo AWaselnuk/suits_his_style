@@ -154,25 +154,31 @@ and more scalable.
 
 $logoPadding: 10px;
 .ctr-logo {
+	display: none;
 	padding: $logoPadding;
 
 	@media (min-width: $tablet) {
+		display: block;
 		float: left;
 	}
 }
 
-// This is the tie image that appears in the navbar
+// This is the tie image that appears in the navbar on tablet up
 $tieWidth: 25px;
 $tieHeight: $tieWidth * 1.92;
 $navHeight: $tieHeight + $logoPadding * 2;
 .logo-tie {
-	display: inline-block;
+	display: none;
 	width: $tieWidth;
 	height: $tieHeight;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: $tieWidth $tieHeight;
 	background-image: url('../images/logo-white-tie-monochrome.png');
+
+	@media (min-width: $tablet) {
+		display: inline-block;
+	}
 }
 
 .nav {

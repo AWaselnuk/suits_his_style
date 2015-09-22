@@ -45,16 +45,14 @@
 		<div id="container">
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-
+        <h1 class="visuallyhidden">
+          <?php bloginfo('name'); ?>
+          <?php bloginfo('description'); ?>
+        </h1>
 
 				<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 				<div id="logo" class="ctr-logo" itemscope itemtype="http://schema.org/Organization">
-          <a class="logo-tie" href="<?php echo home_url(); ?>" rel="nofollow">
-            <span class="visuallyhidden">
-              <?php bloginfo('name'); ?>
-              <?php bloginfo('description'); ?>
-            </span>
-          </a>
+          <a class="logo-tie" href="<?php echo home_url(); ?>" rel="nofollow"></a>
         </div>
 
 				<?php // if you'd like to use the site description you can un-comment it below ?>
