@@ -128,14 +128,6 @@ HEADER STYLES
 	background-color: $black;
 }
 
-.ctr-logo {
-	padding: $base-font-size;
-
-	@media (min-width: $tablet) {
-		float: left;
-	}
-}
-
 .logo {
 	font-size: $h3-font-size;
 	color: white !important;
@@ -146,6 +138,7 @@ HEADER STYLES
 		font-size: $base-font-size;
 	}
 }
+
 
 /*********************
 NAVIGATION STYLES
@@ -159,11 +152,34 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
+$logoPadding: 10px;
+.ctr-logo {
+	padding: $logoPadding;
+
+	@media (min-width: $tablet) {
+		float: left;
+	}
+}
+
+// This is the tie image that appears in the navbar
+$tieWidth: 25px;
+$tieHeight: $tieWidth * 1.92;
+$navHeight: $tieHeight + $logoPadding * 2;
+.logo-tie {
+	display: inline-block;
+	width: $tieWidth;
+	height: $tieHeight;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: $tieWidth $tieHeight;
+	background-image: url('../images/logo-white-tie-monochrome.png');
+}
+
 .nav {
 	border-bottom: 0;
 	margin: 0;
 
-	li {
+	li.menu-item {
 		border-top: 1px solid $blue-dark;
 
 		@media (min-width: $tablet) {
@@ -187,6 +203,13 @@ and more scalable.
 			&.btn-donate {
 				background-color: $yellow;
 				opacity: 1;
+			}
+
+			@media (min-width: $tablet) {
+				padding: 0 $base-font-size;
+				font-size: $lead-font-size;
+				height: $navHeight;
+				line-height: $navHeight;
 			}
 		}
 
@@ -250,22 +273,26 @@ and more scalable.
 	}
 }
 
-.btn-donate {
-	font-weight: bold;
-}
-
 .nav.nav-right-side {
 
+	.btn-donate {
+		display: block;
+		color: $white;
+
+		@media (max-width: $tablet) {
+			padding: $base-font-size;
+		}
+	}
+
 	@media (min-width: $tablet) {
+		padding: $base-font-size;
 		position: absolute;
 		top: 0;
 		right: 0;
 
 		.btn-donate {
-			text-align: center;
-			font-size: $h3-font-size;
-			min-width: 130px;
-			min-height: 59px;
+			display: inline-block;
+			font-size: $lead-font-size;
 		}
 	}
 }

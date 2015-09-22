@@ -49,9 +49,11 @@
 
 				<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 				<div id="logo" class="ctr-logo" itemscope itemtype="http://schema.org/Organization">
-          <a class="logo" href="<?php echo home_url(); ?>" rel="nofollow">
-            <?php bloginfo('name'); ?><br>
-            <span class="logo__description"><?php bloginfo('description'); ?></span>
+          <a class="logo-tie" href="<?php echo home_url(); ?>" rel="nofollow">
+            <span class="visuallyhidden">
+              <?php bloginfo('name'); ?>
+              <?php bloginfo('description'); ?>
+            </span>
           </a>
         </div>
 

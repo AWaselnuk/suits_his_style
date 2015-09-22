@@ -724,6 +724,16 @@ probably best not to use it. I mean, were you going to anyway? */
 
   .col-half {
     width: 50%; } }
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 /*********************
 IMPORTING MODULES
 *********************/
@@ -1258,12 +1268,6 @@ HEADER STYLES
   position: relative;
   background-color: #323944; }
 
-.ctr-logo {
-  padding: 1rem; }
-  @media (min-width: 768px) {
-    .ctr-logo {
-      float: left; } }
-
 .logo {
   font-size: 1.5rem;
   color: white !important;
@@ -1282,13 +1286,28 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
+.ctr-logo {
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .ctr-logo {
+      float: left; } }
+
+.logo-tie {
+  display: inline-block;
+  width: 25px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25px 48px;
+  background-image: url("../images/logo-white-tie-monochrome.png"); }
+
 .nav {
   border-bottom: 0;
   margin: 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav li {
+  .nav li.menu-item {
     border-top: 1px solid #1f2b37;
     /*
     so you really have to rethink your dropdowns for mobile.
@@ -1298,24 +1317,30 @@ and more scalable.
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
     @media (min-width: 768px) {
-      .nav li {
+      .nav li.menu-item {
         float: left;
         border-top: none; } }
-    .nav li a {
+    .nav li.menu-item a {
       display: block;
       color: #fff;
       text-decoration: none;
       padding: 1rem;
       opacity: 0.6; }
-      .nav li a:hover, .nav li a:focus {
+      .nav li.menu-item a:hover, .nav li.menu-item a:focus {
         opacity: 1;
         color: #fff;
         text-decoration: underline; }
-      .nav li a.btn-donate {
+      .nav li.menu-item a.btn-donate {
         background-color: #EBB129;
         opacity: 1; }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
+      @media (min-width: 768px) {
+        .nav li.menu-item a {
+          padding: 0 1rem;
+          font-size: 1.25rem;
+          height: 68px;
+          line-height: 68px; } }
+    .nav li.menu-item ul.sub-menu li a,
+    .nav li.menu-item ul.children li a {
       padding-left: 30px; }
 
 /* end .nav */
@@ -1327,19 +1352,21 @@ and more scalable.
     .nav-main {
       display: block; } }
 
-.btn-donate {
-  font-weight: bold; }
-
+.nav.nav-right-side .btn-donate {
+  display: block;
+  color: #fff; }
+  @media (max-width: 768px) {
+    .nav.nav-right-side .btn-donate {
+      padding: 1rem; } }
 @media (min-width: 768px) {
   .nav.nav-right-side {
+    padding: 1rem;
     position: absolute;
     top: 0;
     right: 0; }
     .nav.nav-right-side .btn-donate {
-      text-align: center;
-      font-size: 1.5rem;
-      min-width: 130px;
-      min-height: 59px; } }
+      display: inline-block;
+      font-size: 1.25rem; } }
 
 .btn-toggle-nav:focus {
   outline: none; }
