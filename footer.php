@@ -72,6 +72,8 @@
 
 		</div>
 
+    <?php include_once("google-analytics.php") ?>
+
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 
