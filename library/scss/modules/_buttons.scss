@@ -25,7 +25,8 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 *********************/
 
 %btn,
-.btn {
+.btn,
+a.btn {
   display: inline-block;
   padding: 0.5em 0.75em;
   text-decoration: none;
@@ -35,11 +36,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   cursor: pointer;
   @include transition(background-color 0.14s ease-in-out);
 
-  &:hover, &:focus {
+  &:hover, &:focus, &:visited {
     color: $white;
     text-decoration: none;
   }
-
 } // end .button
 
 /*

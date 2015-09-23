@@ -58,9 +58,15 @@
 
     <div class="col col-two-thirds">
       <h2>A lack of professional attire can be a barrier to employment</h2>
-      <p class="text-lead">
-        This is a difficult problem because blah blah blah, but we have a simple solution.
-        Providing professional attire to these men gives them the confidence they need to succeed in job interviews and transform opportunities into careers.
+      <p>
+        Suits his Style helps reduce poverty in our community by providing interview clothing and/or industry appropriate clothing to low income, unemployed men in need of employment.
+      </p>
+      <p>
+        Chronic joblessness creates a strain on an individual, his family and more broadly, our community.
+      </p>
+      <p>
+        By providing job-ready men with appropriate interview attire, Suits his Style helps a man find employment;
+        enabling him to support himself, his family, and contribute more fully to Canadian society.
       </p>
       <p>
         <!-- TODO: Add WP path -->

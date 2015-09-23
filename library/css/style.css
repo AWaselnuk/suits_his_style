@@ -591,6 +591,22 @@ blockquote {
   margin: 0 auto;
   max-width: 760px; }
 
+/*================ LINKS ================*/
+a, a:visited {
+  color: #EBB129;
+  /* on hover */
+  /* on click */
+  /* mobile tap color */ }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #d29914; }
+  a:link, a:visited:link {
+    /*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
 /******************************************************************
 Site Name:
 Author:
@@ -793,7 +809,8 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
 .blue-btn, .comment-reply-link, #submit,
-.btn {
+.btn,
+a.btn {
   display: inline-block;
   padding: 0.5em 0.75em;
   text-decoration: none;
@@ -803,9 +820,13 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   cursor: pointer;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus,
+  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, .blue-btn:visited, .comment-reply-link:visited, #submit:visited,
   .btn:hover,
-  .btn:focus {
+  .btn:focus,
+  .btn:visited,
+  a.btn:hover,
+  a.btn:focus,
+  a.btn:visited {
     color: #fff;
     text-decoration: none; }
 
@@ -1240,24 +1261,6 @@ style a page via class
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/*********************
-LINK STYLES
-*********************/
-a, a:visited {
-  color: #EBB129;
-  /* on hover */
-  /* on click */
-  /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d29914; }
-  a:link, a:visited:link {
-    /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
-
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
