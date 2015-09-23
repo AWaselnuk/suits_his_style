@@ -2015,8 +2015,6 @@ query for retina AND a certain size if you want. Go Nuts.
       .home-banner .home-banner__text {
         margin-left: auto;
         margin-right: auto;
-        font-size: 2.25rem;
-        line-height: 3rem;
         max-width: 90%; } }
     @media (min-width: 1030px) {
       .home-banner .home-banner__text {

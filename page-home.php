@@ -12,7 +12,7 @@
 
   <div class="home-banner__initial js-initial-banner">
     <img class="home-banner__logo" src="<?php bloginfo('stylesheet_directory'); ?>/library/images/logo-white.png" alt="Suits His Style logo">
-    <p class="home-banner__text">Suits his Style is a not-for-profit corporation<br>that helps men in need achieve their career goals.</p>
+    <p class="home-banner__text">Suits his Style is an Ottawa based nonprofit that supports the employment opportunities of men in need by providing professional attire with the vision of a world in which everyone is given the opportunity to excel.</p>
     <button class="btn btn-cta home-banner__cta js-trigger-learn-more">I want to learn more</button>
   </div>
 
