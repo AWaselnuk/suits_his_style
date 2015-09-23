@@ -105,41 +105,32 @@
 
     <div class="col col-two-thirds">
       <h2>How can I help?</h2>
-      <p class="text-lead">
+      <p>
         <strong>Suits His Style could not exist without your donations.</strong>
       </p>
-      <p class="text-lead">
+      <p>
         Your generous donation of time, clothing, or money can ensure that Suits His Style continues to make a real difference for unemployed men in need.
       </p>
-      <!-- TODO: Add WP path -->
-      <p><a class="btn btn-primary" href="<?php echo site_url() ?>/donate">Donate Now</a></p>
+      <p><a class="btn btn-primary" href="<?php echo site_url() ?>/support-us">Donate Now</a></p>
 
       <br>
-      <p class="text-lead">
-        <strong>Suits His Style is organized and operated entirely by our amazing volunteers.</strong>
+      <p>
+        <strong>Volunteering with Suits his Style is a unique opportunity to directly impact the lives of men and their families through challenging and rewarding work.</strong>
       </p>
-      <p class="text-lead">
-        Briefly list some benefits of volunteering:
+      <p>
+        The impact of your time is immediately clear when volunteering with Suits his Style; men who are chronically unemployed visibly have more self-confidence by the end of their appointment. You also can gain experience in social work while helping men back on their feet, to support themselves and their families.
       </p>
-      <ul>
-        <li>Make a huge difference for men in need.</li>
-        <li>Gain real experience in the social work field.</li>
-        <li>Contribute towards your volunteer requirements for high school.</li>
-        <li>Work with a motivated, experienced, and fun-loving team.</li>
-        <li>... and more!</li>
-      </ul>
-      <!-- TODO: Add WP path -->
       <p><a class="btn btn-primary" href="<?php echo site_url() ?>/volunteer">Learn more about volunteer opportunities &raquo;</a></p>
 
-      <br>
+      <!-- <br>
       <p class="text-lead">
         <strong>Let's become partners.</strong>
       </p>
       <p class="text-lead">
         Talk about partnership and sponsorship opportunites.
       </p>
-      <!-- TODO: Add WP path -->
-      <p><a class="btn btn-primary" href="<?php echo site_url() ?>/volunteer">Learn more about partnership opportunities &raquo;</a></p>
+      <p><a class="btn btn-primary" href="<?php echo site_url() ?>/volunteer">Learn more about partnership opportunities &raquo;</a></p> -->
+
     </div>
   </div>
 
