@@ -18,29 +18,28 @@
 
   <div class="row home-banner__learn-more js-learn-more">
     <div class="col col-third">
-      <a class="home-banner__link">
-        <p class="text-lead">Career boosting services for men in need</p>
+      <a href="<?php echo site_url() ?>/about-us" class="home-banner__link">
+        <p class="text-lead">Career boosting services</p>
 
         <p>
-          Here is some short punchy text about our services and how effective they are.
+          Suits his Style works with job-ready men from vulnerable populations to improve their chances when taking part in job interviews.
         </p>
       </a>
     </div>
 
     <div class="col col-third">
-      <a class="home-banner__link">
-        <p class="text-lead">Fulfilling volunteer opportunites</p>
+      <a href="<?php echo site_url() ?>/volunteer" class="home-banner__link">
+        <p class="text-lead">Volunteer opportunites</p>
 
         <p>
-          Oh my god volunteering is amazing you have no idea how great it is!
+          Volunteering with Suits his Style is a unique opportunity to directly impact the lives of men and their families through challenging and rewarding work.
         </p>
       </a>
     </div>
 
     <div class="col col-third">
-      <a class="home-banner__link">
+      <a href="<?php echo site_url() ?>/support-us" class="home-banner__link">
         <p class="text-lead">We count on your donations</p>
-
         <p>
           Read on to find out about how you can donate money or materials. We also have partnership and sponsorship opportunites.
         </p>
@@ -58,14 +57,14 @@
     </div>
 
     <div class="col col-two-thirds">
-      <h2>9999 Men don't have what they need to get employed.</h2>
+      <h2>A lack of professional attire can be a barrier to employment</h2>
       <p class="text-lead">
         This is a difficult problem because blah blah blah, but we have a simple solution.
         Providing professional attire to these men gives them the confidence they need to succeed in job interviews and transform opportunities into careers.
       </p>
       <p>
         <!-- TODO: Add WP path -->
-        <a class="btn btn-primary" href="/services">Learn more about our services &raquo;</a>
+        <a class="btn btn-primary" href="<?php echo site_url() ?>/about-us">Learn more about our services &raquo;</a>
       </p>
     </div>
 
@@ -107,7 +106,7 @@
         Your generous donation of time, clothing, or money can ensure that Suits His Style continues to make a real difference for unemployed men in need.
       </p>
       <!-- TODO: Add WP path -->
-      <p><a class="btn btn-primary" href="/donate">Donate Now</a></p>
+      <p><a class="btn btn-primary" href="<?php echo site_url() ?>/donate">Donate Now</a></p>
 
       <br>
       <p class="text-lead">
@@ -124,7 +123,7 @@
         <li>... and more!</li>
       </ul>
       <!-- TODO: Add WP path -->
-      <p><a class="btn btn-primary" href="/volunteer">Learn more about volunteer opportunities &raquo;</a></p>
+      <p><a class="btn btn-primary" href="<?php echo site_url() ?>/volunteer">Learn more about volunteer opportunities &raquo;</a></p>
 
       <br>
       <p class="text-lead">
@@ -134,7 +133,7 @@
         Talk about partnership and sponsorship opportunites.
       </p>
       <!-- TODO: Add WP path -->
-      <p><a class="btn btn-primary" href="/volunteer">Learn more about partnership opportunities &raquo;</a></p>
+      <p><a class="btn btn-primary" href="<?php echo site_url() ?>/volunteer">Learn more about partnership opportunities &raquo;</a></p>
     </div>
   </div>
 
