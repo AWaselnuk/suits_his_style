@@ -12,10 +12,19 @@
 <?php
 switch ($pagename) {
   case "about-us":
-    $pageBannerText = "This is some text about what Suits His Style is.<br>Oh wow it's amazing.";
+    $pageBannerText = "Suits his Style is an Ottawa-based, nonprofit that supports the employment opportunities of men in need by providing professional attire with the vision of a world in which everyone is given the opportunity to excel.";
+    break;
+  case "volunteer":
+    $pageBannerText = "Volunteering with Suits his Style is a unique opportunity to directly impact the lives of men and their families through challenging and rewarding work.";
+    break;
+  case "support-us":
+    $pageBannerText = "Your generosity can improve the lives of vulnerable members of our community.";
+    break;
+  case "client-resources":
+    $pageBannerText = "At Suits his Style, clients seeking business attire are provided an impartial and comprehensive suiting service by volunteers.";
     break;
   default:
-    $pageBannerText = "Suits his Style is a not-for-profit corporation that helps men in need achieve their career goals.";
+    $pageBannerText = "Suits his Style is an Ottawa-based, nonprofit that supports the employment opportunities of men in need by providing professional attire with the vision of a world in which everyone is given the opportunity to excel.";
 }
 ?>
 
