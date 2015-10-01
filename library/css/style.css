@@ -2070,6 +2070,9 @@ query for retina AND a certain size if you want. Go Nuts.
 .page-banner-client-resources {
   background-image: url("../images/banners/client-resources.jpg"); }
 
+.page-banner-partnership {
+  background-image: url("../images/banners/partnership.jpg"); }
+
 /*============================================================================
   SINGLE POST AND POST LIST ITEMS
 ==============================================================================*/

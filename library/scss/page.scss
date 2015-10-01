@@ -23,7 +23,7 @@ $banner-link-height: 280px;
   background-image: url(../images/home.jpg);
 }
 
-$banner-pages: about-us volunteer support-us client-resources;
+$banner-pages: about-us volunteer support-us client-resources partnership;
 
 @each $banner in $banner-pages {
   .page-banner-#{$banner} {
