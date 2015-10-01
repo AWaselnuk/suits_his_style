@@ -976,6 +976,14 @@ FOOTER STYLES
 	margin: 0;
 }
 
+.footer-logo {
+	width: 220px;
+
+	@media (min-width: $tablet) {
+		width: 260px;
+	}
+}
+
 /*============================================================================
   UTILITIES
 ==============================================================================*/
@@ -984,4 +992,8 @@ FOOTER STYLES
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+}
+
+.text-center {
+	text-align: center;
 }

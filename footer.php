@@ -59,7 +59,13 @@
           </div>
 				</div>
 
+        <div class="row row--no-padding">
 
+          <div class="col col-full text-center">
+            <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-white-monochrome.png" alt="Suits His Style">
+          </div>
+
+        </div>
 
 			</footer>
 
