@@ -756,36 +756,13 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 IMPORTING MODULES
 *********************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Alert Styles
-
-If you want to use these alerts in your design, you can. If not,
-you can just remove this stylesheet.
-
-******************************************************************/
-.alert-help, .alert-info, .alert-error, .alert-success {
-  margin: 10px;
-  padding: 5px 18px;
+.notice {
+  padding: 1rem;
   border: 1px solid; }
 
-.alert-help {
-  border-color: #e8dc59;
-  background: #ebe16f; }
-
-.alert-info {
-  border-color: #bfe4f4;
-  background: #d5edf8; }
-
-.alert-error {
-  border-color: #f8cdce;
-  background: #fbe3e4; }
-
-.alert-success {
-  border-color: #deeaae;
-  background: #e6efc2; }
+.notice--info {
+  border-color: #7292b0;
+  background-color: #d4dee7; }
 
 /******************************************************************
 Site Name:
