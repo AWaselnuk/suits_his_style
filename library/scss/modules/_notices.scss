@@ -1,0 +1,9 @@
+.notice {
+  padding: 1rem;
+  border: 1px solid;
+}
+
+.notice--info {
+  border-color: $blue-light;
+  background-color: $blue-white;
+}
