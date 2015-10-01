@@ -607,6 +607,11 @@ a, a:visited {
     */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
+/*================ LISTS ================*/
+ul {
+  list-style-type: disc;
+  padding-left: 1.1rem; }
+
 /******************************************************************
 Site Name:
 Author:
