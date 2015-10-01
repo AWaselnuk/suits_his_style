@@ -45,6 +45,9 @@ $pink:              #f01d4f;
 $yellow:            #EBB129;
 $yellow-light:      lighten($yellow, 10%);
 
+$color-primary:     $yellow;
+$color-secondary:   $yellow;
+
 $link-color:        $yellow;
 $link-hover:        darken($link-color, 9%);
 

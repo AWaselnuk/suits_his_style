@@ -860,6 +860,21 @@ and it will create a button dependant on those variables.
   background: #1f2b37;
   color: white; }
 
+.btn-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .btn-group .btn {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: 1px solid #ce9613;
+    border-right: none; }
+    .btn-group .btn:last-child {
+      border-right: 1px solid #ce9613; }
+
 /******************************************************************
 Site Name:
 Author:
@@ -1335,6 +1350,12 @@ and more scalable.
     .nav li.menu-item ul.sub-menu li a,
     .nav li.menu-item ul.children li a {
       padding-left: 30px; }
+  .nav li.current-menu-item a,
+  .nav li.current_page_item a,
+  .nav li.current_page_ancestor a {
+    opacity: 1;
+    color: #fff;
+    text-decoration: underline; }
 
 /* end .nav */
 .nav-main {

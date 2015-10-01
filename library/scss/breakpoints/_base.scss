@@ -232,7 +232,11 @@ $navHeight: $tieHeight + $logoPadding * 2;
 	li.current_page_item,
 	li.current_page_ancestor {
 
-		a {}
+		a {
+			opacity: 1;
+			color: $white;
+			text-decoration: underline;
+		}
 
 	}  /* end current highlighters */
 

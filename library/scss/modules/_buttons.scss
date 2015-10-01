@@ -64,10 +64,10 @@ and it will create a button dependant on those variables.
 
 .btn-cta,
 .btn-primary {
-  background-color: $yellow;
+  background-color: $color-primary;
 
   &:hover, &:active, &:focus {
-    background-color: $yellow-light;
+    background-color: lighten($color-primary, 10%);;
   }
 }
 
@@ -99,4 +99,18 @@ and it will create a button dependant on those variables.
   width: 100%;
   background: $blue-dark;
   color: white;
+}
+
+.btn-group {
+  display: flex;
+
+  .btn {
+    flex: 1;
+    border: 1px solid darken($color-primary, 10%);
+    border-right: none;
+
+    &:last-child {
+      border-right: 1px solid darken($color-primary, 10%);
+    }
+  }
 }
