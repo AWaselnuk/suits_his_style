@@ -593,12 +593,12 @@ blockquote {
 
 /*================ LINKS ================*/
 a, a:visited {
-  color: #EBB129;
+  color: #3DD811;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d29914; }
+    color: #30a90d; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -829,12 +829,12 @@ and it will create a button dependant on those variables.
 
 .btn-cta,
 .btn-primary {
-  background-color: #EBB129; }
+  background-color: #3DD811; }
   .btn-cta:hover, .btn-cta:active, .btn-cta:focus,
   .btn-primary:hover,
   .btn-primary:active,
   .btn-primary:focus {
-    background-color: #efc258; }
+    background-color: #30a90d; }
 
 .btn-cta {
   padding: 0.75em 1em;
@@ -870,10 +870,10 @@ and it will create a button dependant on those variables.
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    border: 1px solid #ce9613;
+    border: 1px solid #30a90d;
     border-right: none; }
     .btn-group .btn:last-child {
-      border-right: 1px solid #ce9613; }
+      border-right: 1px solid #30a90d; }
 
 /******************************************************************
 Site Name:
@@ -1339,7 +1339,7 @@ and more scalable.
         color: #fff;
         text-decoration: underline; }
       .nav li.menu-item a.btn-donate {
-        background-color: #EBB129;
+        background-color: #3DD811;
         opacity: 1; }
       @media (min-width: 768px) {
         .nav li.menu-item a {
