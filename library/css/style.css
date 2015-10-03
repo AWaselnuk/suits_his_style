@@ -1764,7 +1764,8 @@ view.
   opacity: 1; }
 
 .footer-nav {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .footer-logo {
   width: 220px; }
