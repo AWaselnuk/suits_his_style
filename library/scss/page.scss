@@ -4,6 +4,7 @@ $banner-link-height: 280px;
 .page-banner {
   position: relative;
   color: white;
+  background-image: url(../images/banners/default.jpg);
 
   .page-banner__text {
     margin-top: 0;
@@ -18,10 +19,6 @@ $banner-link-height: 280px;
 }
 
 /*================ Banner Images ================*/
-
-.page-banner-default {
-  background-image: url(../images/home.jpg);
-}
 
 $banner-pages: about-us volunteer support-us client-resources partnership;
 

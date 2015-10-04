@@ -2072,7 +2072,8 @@ query for retina AND a certain size if you want. Go Nuts.
 
 .page-banner {
   position: relative;
-  color: white; }
+  color: white;
+  background-image: url(../images/banners/default.jpg); }
   .page-banner .page-banner__text {
     margin-top: 0;
     font-size: 1.25rem;
@@ -2083,9 +2084,6 @@ query for retina AND a certain size if you want. Go Nuts.
         line-height: 1.5em; } }
 
 /*================ Banner Images ================*/
-.page-banner-default {
-  background-image: url(../images/home.jpg); }
-
 .page-banner-about-us {
   background-image: url("../images/banners/about-us.jpg"); }
 
