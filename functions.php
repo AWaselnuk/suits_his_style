@@ -167,6 +167,16 @@ function bones_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
+  register_sidebar(array(
+    'id' => 'footer-sidebar',
+    'name' => __( 'Footer Sidebar', 'bonestheme' ),
+    'description' => __( 'The footer sidebar.', 'bonestheme' ),
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_title' => '',
+    'after_title' => '',
+  ));
+
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call

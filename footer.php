@@ -28,6 +28,16 @@
             <?php endwhile; ?>
             </ul> -->
 
+            <?php if ( is_active_sidebar( 'footer-sidebar' ) ) : ?>
+
+              <?php dynamic_sidebar( 'footer-sidebar' ); ?>
+
+            <?php endif; ?>
+
+          </div>
+
+          <div class="col col-half">
+
             <h3>Get to know us</h3>
             <nav role="navigation">
               <?php wp_nav_menu(array(
@@ -44,9 +54,6 @@
                 'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
               )); ?>
             </nav>
-          </div>
-
-          <div class="col col-half">
 
             <h3>Get in touch</h3>
             <p>We look forward to hearing from you!</p>
