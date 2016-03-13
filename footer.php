@@ -28,9 +28,9 @@
             <?php endwhile; ?>
             </ul> -->
 
-            <?php if ( is_active_sidebar( 'footer-sidebar' ) ) : ?>
+            <?php if ( is_active_sidebar( 'footer-left-sidebar' ) ) : ?>
 
-              <?php dynamic_sidebar( 'footer-sidebar' ); ?>
+              <?php dynamic_sidebar( 'footer-left-sidebar' ); ?>
 
             <?php endif; ?>
 
@@ -38,31 +38,12 @@
 
           <div class="col col-half">
 
-            <h3>Get to know us</h3>
-            <nav role="navigation">
-              <?php wp_nav_menu(array(
-                'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
-                'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-                'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-                'menu_class' => 'footer-nav cf',                // adding custom nav class
-                'theme_location' => 'footer-links',             // where it's located in the theme
-                'before' => '',                                 // before the menu
-                'after' => '',                                  // after the menu
-                'link_before' => '',                            // before each link
-                'link_after' => '',                             // after each link
-                'depth' => 0,                                   // limit the depth of the nav
-                'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-              )); ?>
-            </nav>
+            <?php if ( is_active_sidebar( 'footer-right-sidebar' ) ) : ?>
 
-            <h3>Get in touch</h3>
-            <p>We look forward to hearing from you!</p>
+              <?php dynamic_sidebar( 'footer-right-sidebar' ); ?>
 
-            <p>
-              Suits His Style<br>
-              613.761.6451<br>
-              <a href="mailto:info@suitshisstyle.ca">info@suitshisstyle.ca</a><br>
-            </p>
+            <?php endif; ?>
+
           </div>
 				</div>
 

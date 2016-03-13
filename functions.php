@@ -168,9 +168,19 @@ function bones_register_sidebars() {
 	));
 
   register_sidebar(array(
-    'id' => 'footer-sidebar',
-    'name' => __( 'Footer Sidebar', 'bonestheme' ),
-    'description' => __( 'The footer sidebar.', 'bonestheme' ),
+    'id' => 'footer-left-sidebar',
+    'name' => __( 'Footer Left Sidebar', 'bonestheme' ),
+    'description' => __( 'The left footer sidebar.', 'bonestheme' ),
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_title' => '',
+    'after_title' => '',
+  ));
+
+  register_sidebar(array(
+    'id' => 'footer-right-sidebar',
+    'name' => __( 'Footer Right Sidebar', 'bonestheme' ),
+    'description' => __( 'The right footer sidebar.', 'bonestheme' ),
     'before_widget' => '',
     'after_widget' => '',
     'before_title' => '',
