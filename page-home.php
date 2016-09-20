@@ -50,6 +50,13 @@
 
 <main>
 
+  <?php/* Home page announcements can be placed in this div */?>
+  <div class="row row-full row-dark announcement-banner">
+    <div class="col col-full">
+      Announcement: Suits His Style was featured on CTV News Ottawa for their ‘Suits on, Ties off!’ fundraiser. <a href="http://ottawa.ctvnews.ca/suits-his-style-helps-disadvantaged-men-dress-for-success-1.3074729">Read more and watch the video here.</a>
+    </div>
+  </div>
+
   <div class="row">
 
     <div class="col col-third">

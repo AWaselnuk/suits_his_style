@@ -2064,6 +2064,11 @@ query for retina AND a certain size if you want. Go Nuts.
   .home-banner .row {
     padding: 0; }
 
+.announcement-banner {
+  text-align: center;
+  font-style: italic;
+  font-weight: 600; }
+
 .page-banner {
   position: relative;
   color: white;
